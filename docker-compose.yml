@@ -1,0 +1,73 @@
+
+services:
+  accounts:
+    image: prateekarya100/accounts:ms
+#    container_name: accounts_container
+    build: ./accounts
+    ports:
+      - "8081:8080"
+#    deploy:
+#      replicas: 3
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/microservices
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - my_network
+
+  cards:
+    image: prateekarya100/cards:ms
+#    container_name: cards_container
+    build:  ./cards
+    ports:
+      - "0:8080" #[for scaling container write 0 , instead of mentioning any dynamic range]
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/microservices
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - my_network
+
+  loans:
+    image: prateekarya100/loans:ms
+    deploy:
+      replicas: 3
+    #    container_name: loans_container
+    build:  ./loans
+    ports:
+      - "0:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/microservices
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - my_network
+
+  db:
+    image: mysql:8.0
+    container_name: db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: microservices
+    ports:
+      - "3307:3306"
+    networks:
+      - my_network
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -u root -ppassword || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+networks:
+  my_network:
+    driver: bridge
