@@ -1,0 +1,21 @@
+#server:
+#  port: 9000
+
+spring:
+  datasource:
+#    LOCAL MYSQL CONNECTION CONFIGURATIONS
+    #    url: "jdbc:mysql://localhost:3306/microservices"
+    #    username: "root"
+    #    password: "root"
+
+#    DOCKER MYSQL CONNECTION CONFIGURATIONS
+    url: "jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${MYSQL_DB_NAME:microservices}"
+    username: ${MYSQL_USER:root}
+    password: ${MYSQL_PASSWORD:root}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: mysql
+    generate-ddl: true
