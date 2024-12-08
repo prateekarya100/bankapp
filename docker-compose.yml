@@ -6,8 +6,8 @@ services:
     build: ./accounts
     ports:
       - "8081:8080"
-#    deploy:
-#      replicas: 3
+    deploy:
+      replicas: 3
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/microservices
       SPRING_DATASOURCE_USERNAME: root
