@@ -1,2 +1,2 @@
-# bankapp
- banking solution
+# EazyBanking
+A complete banking solution
