@@ -1,5 +1,6 @@
 package com.tomcatdevs.Accounts.controller;
 
+import com.tomcatdevs.Accounts.dto.AccountsContactInfoDto;
 import com.tomcatdevs.Accounts.dto.CustomerDto;
 import com.tomcatdevs.Accounts.dto.ErrorResponseDto;
 import com.tomcatdevs.Accounts.dto.ResponseDto;
@@ -12,8 +13,11 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
-import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -23,16 +27,30 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(path = "/api",produces = MediaType.APPLICATION_JSON_VALUE)
-@AllArgsConstructor
+//@AllArgsConstructor
 @Validated
 @Tag(
         name = "EazyBank Accounts Service",
         description = "EazyBank Accounts microservices restful services documentation"
 )
-public class AccountsController {
+@EnableConfigurationProperties({AccountsContactInfoDto.class})
+    public class AccountsController {
+
+    @Value("${build.version}")
+    private String buildVersion;
+
+    @Autowired
+    private Environment environment;
+
+    @Autowired
+    private AccountsContactInfoDto contactInfoDto;
 
 //    @Autowired
-    private IAccountsService iAccountsService;
+    private final IAccountsService iAccountsService;
+
+    public AccountsController(IAccountsService iAccountsService){
+        this.iAccountsService=iAccountsService;
+    }
 
     @Operation(
             summary = "Create new bank account in eazybank",
@@ -57,7 +75,7 @@ public class AccountsController {
                     )
             }
     )
-    @PostMapping(value = "/create")
+    @PostMapping(value = "/createAccount")
     public ResponseEntity<ResponseDto> create(@Valid @RequestBody CustomerDto  customerDto){
         System.out.println(customerDto);
         iAccountsService.createAccount(customerDto);
@@ -87,7 +105,7 @@ public class AccountsController {
                     )
             }
     )
-    @GetMapping(value = "/fetch")
+    @GetMapping(value = "/fetchAccountDetails")
     public ResponseEntity<CustomerDto> fetch(@RequestParam
                                                  @Pattern(regexp = "$|[0-9]{10}",message = "number must be of 10 digit")
                                                  String mobileNumber){
@@ -118,7 +136,7 @@ public class AccountsController {
                     )
             }
     )
-    @PutMapping(value = "/update")
+    @PutMapping(value = "/updateAccountDetails")
     public ResponseEntity<ResponseDto> update(@Valid @RequestBody CustomerDto customerDto){
         boolean isUpdated = iAccountsService.updateCustomerAccountDetails(customerDto);
         if(isUpdated){
@@ -153,7 +171,7 @@ public class AccountsController {
                     )
             }
     )
-    @DeleteMapping(value = "/delete")
+    @DeleteMapping(value = "/deleteAccountDetails")
     ResponseEntity<ResponseDto> delete(@RequestParam
                                        @Pattern(regexp = "$|[0-9]{10}",message = "number must be of 10 digit")
                                        String mobileNumber){
@@ -165,6 +183,100 @@ public class AccountsController {
             return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED)
                     .body(new ResponseDto(HttpStatus.EXPECTATION_FAILED.toString(),"customer account deletion failed"));
         }
+    }
+
+    @Operation(
+            summary = "fetch build version of eazybank",
+            description = "EazyBank build version of restful services documentation"
+    )
+    @ApiResponses(
+            value = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description="Request Accepted"
+                    ),
+                    @ApiResponse(
+                            responseCode = "417",
+                            description = "Expectation Failed"
+                    ),
+                    @ApiResponse(
+                            responseCode = "500",
+                            description="Internal_Server_Error",
+                            content = @Content(schema = @Schema(implementation = ErrorResponseDto.class))
+                    )
+            }
+    )
+    @GetMapping(value = "/version")
+    public ResponseEntity<String> buildVersion(){
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(buildVersion);
+    }
+
+    @Value("${application.developer}")
+    private String developer;
+
+    @GetMapping(value = "/developer")
+    public ResponseEntity<String> applicationDeveloper(){
+        return ResponseEntity.status(HttpStatus.OK)
+                .body(developer);
+    }
+
+
+    @Operation(
+            summary = "Get java version of eazybank",
+            description = "EazyBank java version of restful services documentation"
+    )
+    @ApiResponses(
+            value = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description="Request Accepted"
+                    ),
+                    @ApiResponse(
+                            responseCode = "417",
+                            description = "Expectation Failed"
+                    ),
+                    @ApiResponse(
+                            responseCode = "500",
+                            description="Internal_Server_Error",
+                            content = @Content(schema = @Schema(implementation = ErrorResponseDto.class))
+                    )
+            }
+    )
+    @GetMapping(value = "/maven-version")
+    public ResponseEntity<String> getJavaVersion(){
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(environment.getProperty("MAVEN_HOME"));
+    }
+
+    @Operation(
+            summary = "get java version of eazybank",
+            description = "EazyBank java version of restful services documentation"
+    )
+    @ApiResponses(
+            value = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description="Request Accepted"
+                    ),
+                    @ApiResponse(
+                            responseCode = "417",
+                            description = "Expectation Failed"
+                    ),
+                    @ApiResponse(
+                            responseCode = "500",
+                            description="Internal_Server_Error",
+                            content = @Content(schema = @Schema(implementation = ErrorResponseDto.class))
+                    )
+            }
+    )
+    @GetMapping(value = "/contact-info")
+    public ResponseEntity<AccountsContactInfoDto> getContactInfo(){
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(contactInfoDto);
     }
 
 }
