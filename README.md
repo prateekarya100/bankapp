@@ -1,4 +1,4 @@
-This project is a comprehensive bank application developed using Spring Boot, Java, and PostgreSQL. It features user authentication, account management, and transaction processing.
+This project is a comprehensive bank application developed using Spring Boot and Microservices Architecture, Java, and Dockerized MySQL. It features user authentication, account management, and transaction processing.
 
 Features
 --------
