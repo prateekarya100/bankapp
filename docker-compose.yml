@@ -23,7 +23,8 @@ services:
 #    container_name: cards_container
     build:  ./cards
     ports:
-      - "0:8080" #[for scaling container write 0 , instead of mentioning any dynamic range]
+#      - "0:8080" #[for scaling container write 0 , instead of mentioning any dynamic range]
+      - "9000:8080" #[for scaling container write 0 , instead of mentioning any dynamic range]
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/microservices
       SPRING_DATASOURCE_USERNAME: root

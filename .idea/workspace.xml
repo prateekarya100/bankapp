@@ -6,12 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="daa62374-90ac-4498-b149-be0dc23c0572" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/Cards/src/main/java/com/tomcat/Cards/dto/ContactCardsDevelopmentTeam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cards/Dockerfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cards/src/main/java/com/tomcat/Cards/controller/CardsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/src/main/java/com/tomcat/Cards/controller/CardsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Loans/Dockerfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +28,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Cards" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -53,9 +55,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.CardsApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "tomcat",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/github_repo_clone/bankapp/bankapp"
   }
