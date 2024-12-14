@@ -13,7 +13,6 @@
       <change beforePath="$PROJECT_DIR$/Cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Loans/Dockerfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +27,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Cards" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -58,7 +57,7 @@
     "Application.CardsApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "tomcat",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/github_repo_clone/bankapp/bankapp"
   }

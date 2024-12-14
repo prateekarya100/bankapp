@@ -28,7 +28,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path = "/api/cards",produces = MediaType.APPLICATION_JSON_VALUE)
-@AllArgsConstructor
+//@AllArgsConstructor
 @Tag(
         name = "Cards Microservices",
         description = "EazyBank cards microservices restful API documentation"
@@ -37,10 +37,14 @@ import java.util.List;
 @EnableConfigurationProperties({ContactCardsDevelopmentTeam.class})
 public class CardsController {
 
-    private iCardsServices cardsServices;
+    private final iCardsServices cardsServices;
 
     @Autowired
     private ContactCardsDevelopmentTeam contactCardsDevelopmentTeam;
+
+    public CardsController(iCardsServices cardsServices) {
+        this.cardsServices = cardsServices;
+    }
 
     @Operation(
             summary = "EazyBank issue new card to the customer"
