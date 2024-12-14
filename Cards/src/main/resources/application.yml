@@ -19,3 +19,12 @@ spring:
     show-sql: true
     database: mysql
     generate-ddl: true
+
+cards:
+  message: "Thanks to contacting cards microservices development team"
+  contactDetails:
+    developerName: "prateek arya"
+    email: "prateekarya100@gmail.com"
+  onCallSupport:
+    - 9650841442
+    - 8864815642

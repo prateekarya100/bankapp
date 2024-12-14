@@ -1,6 +1,7 @@
 package com.tomcat.Cards.controller;
 
 import com.tomcat.Cards.dto.CardsDto;
+import com.tomcat.Cards.dto.ContactCardsDevelopmentTeam;
 import com.tomcat.Cards.dto.ErrorResponseDto;
 import com.tomcat.Cards.dto.ResponseDto;
 import com.tomcat.Cards.model.Cards;
@@ -14,6 +15,8 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -31,9 +34,13 @@ import java.util.List;
         description = "EazyBank cards microservices restful API documentation"
 )
 @Validated
+@EnableConfigurationProperties({ContactCardsDevelopmentTeam.class})
 public class CardsController {
 
     private iCardsServices cardsServices;
+
+    @Autowired
+    private ContactCardsDevelopmentTeam contactCardsDevelopmentTeam;
 
     @Operation(
             summary = "EazyBank issue new card to the customer"
@@ -230,4 +237,34 @@ public class CardsController {
                     .body(new ResponseDto(HttpStatus.NOT_ACCEPTABLE,"sorry, your limit reset for your card is not accepted"));
         }
     }
+
+    @Operation(
+            summary = "EazyBank contact cards development team while facing an issue",
+            description = "contact cards development team for any issue arises at provided details"
+    )
+    @ApiResponses(
+            value = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "OK"
+                    ),
+                    @ApiResponse(
+                            responseCode = "500",
+                            description = "INTERNAL_SERVER_ERROR"
+                    ),
+                    @ApiResponse(
+                            responseCode = "417",
+                            description = "EXPECTATION_FAILED",
+                            content = @Content(
+                                    contentSchema = @Schema(implementation = ErrorResponseDto.class)
+                            )
+                    )
+            }
+    )
+    @GetMapping(value = "/cards-info")
+    public ResponseEntity<ContactCardsDevelopmentTeam> cardsDevTeamContactInfo() {
+        return ResponseEntity.status(HttpStatus.OK)
+                .body(contactCardsDevelopmentTeam);
+    }
+
 }
