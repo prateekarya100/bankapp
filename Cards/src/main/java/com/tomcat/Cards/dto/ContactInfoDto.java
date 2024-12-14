@@ -2,9 +2,9 @@ package com.tomcat.Cards.dto;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @ConfigurationProperties(prefix = "cards")
-public record ContactCardsDevelopmentTeam(String message, HashMap<String,String> contactDetails, List<String> onCallSupport) {
+public record ContactInfoDto(String message, Map<String,String> contactDetails, List<String> onCallSupport) {
 }

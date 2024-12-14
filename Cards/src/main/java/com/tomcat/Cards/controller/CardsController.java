@@ -1,7 +1,7 @@
 package com.tomcat.Cards.controller;
 
 import com.tomcat.Cards.dto.CardsDto;
-import com.tomcat.Cards.dto.ContactCardsDevelopmentTeam;
+import com.tomcat.Cards.dto.ContactInfoDto;
 import com.tomcat.Cards.dto.ErrorResponseDto;
 import com.tomcat.Cards.dto.ResponseDto;
 import com.tomcat.Cards.model.Cards;
@@ -34,13 +34,13 @@ import java.util.List;
         description = "EazyBank cards microservices restful API documentation"
 )
 @Validated
-@EnableConfigurationProperties({ContactCardsDevelopmentTeam.class})
+@EnableConfigurationProperties({ContactInfoDto.class})
 public class CardsController {
 
     private final iCardsServices cardsServices;
 
     @Autowired
-    private ContactCardsDevelopmentTeam contactCardsDevelopmentTeam;
+    private ContactInfoDto contactInfoDto;
 
     public CardsController(iCardsServices cardsServices) {
         this.cardsServices = cardsServices;
@@ -266,9 +266,9 @@ public class CardsController {
             }
     )
     @GetMapping(value = "/cards-info")
-    public ResponseEntity<ContactCardsDevelopmentTeam> cardsDevTeamContactInfo() {
+    public ResponseEntity<ContactInfoDto> cardsDevTeamContactInfo() {
         return ResponseEntity.status(HttpStatus.OK)
-                .body(contactCardsDevelopmentTeam);
+                .body(contactInfoDto);
     }
 
 }

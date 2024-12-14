@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="daa62374-90ac-4498-b149-be0dc23c0572" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Cards/src/main/java/com/tomcat/Cards/dto/ContactCardsDevelopmentTeam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/src/main/java/com/tomcat/Cards/dto/ContactInfoDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts/src/main/java/com/tomcatdevs/Accounts/controller/AccountsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/tomcatdevs/Accounts/controller/AccountsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cards/Dockerfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cards/src/main/java/com/tomcat/Cards/controller/CardsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/src/main/java/com/tomcat/Cards/controller/CardsController.java" afterDir="false" />

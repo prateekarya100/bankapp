@@ -34,7 +34,7 @@ import org.springframework.web.bind.annotation.*;
         description = "EazyBank Accounts microservices restful services documentation"
 )
 @EnableConfigurationProperties({AccountsContactInfoDto.class})
-    public class AccountsController {
+public class AccountsController {
 
     @Value("${build.version}")
     private String buildVersion;
