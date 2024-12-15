@@ -5,43 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="daa62374-90ac-4498-b149-be0dc23c0572" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Accounts/Dockerfile" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Cards/src/main/java/com/tomcat/Cards/dto/ContactInfoDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/Accounts-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/Schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/AccountsApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/auditing/AuditAwareImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/constants/AccountsConstants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/controller/AccountsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/dto/AccountsContactInfoDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/dto/AccountsDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/dto/CustomerDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/dto/ErrorResponseDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/dto/ResponseDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/exception/CustomerAlreadyExistsException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/exception/GlobalExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/exception/ResourceNotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/mapper/AccountsMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/mapper/CustomerMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/model/Accounts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/model/BaseEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/model/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/repository/AccountsRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/repository/CustomerRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/service/IAccountsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/service/Impl/AccountsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/surefire-reports/2024-12-14T20-29-02_532.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/surefire-reports/TEST-com.tomcatdevs.Accounts.AccountsApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/surefire-reports/com.tomcatdevs.Accounts.AccountsApplicationTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/test-classes/com/tomcatdevs/Accounts/AccountsApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts/target/accounts-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/target/accounts-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts/target/surefire-reports/2024-12-15T15-44-13_486.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts/target/surefire-reports/TEST-com.tomcatdevs.Accounts.AccountsApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/target/surefire-reports/TEST-com.tomcatdevs.Accounts.AccountsApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts/target/surefire-reports/com.tomcatdevs.Accounts.AccountsApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/target/surefire-reports/com.tomcatdevs.Accounts.AccountsApplicationTests.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cards/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cards/src/main/java/com/tomcat/Cards/controller/CardsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/src/main/java/com/tomcat/Cards/controller/CardsController.java" afterDir="false" />
@@ -63,7 +33,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Loans" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
