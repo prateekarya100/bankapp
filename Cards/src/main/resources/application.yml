@@ -21,10 +21,10 @@ spring:
     generate-ddl: true
 
 cards:
-  message: "Thanks to contacting cards microservices development team"
+  message: "Thanks to contact eazybank cards restful webservices related APIs"
   contactDetails:
-    developerName: "prateek arya"
+    mobile: "9650841442"
     email: "prateekarya100@gmail.com"
   onCallSupport:
     - 9650841442
-    - 8864815642
+    - 9389998268
