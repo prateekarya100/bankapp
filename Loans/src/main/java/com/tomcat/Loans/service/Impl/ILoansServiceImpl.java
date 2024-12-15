@@ -9,7 +9,6 @@ import com.tomcat.Loans.model.Loans;
 import com.tomcat.Loans.repository.LoansRepository;
 import com.tomcat.Loans.service.ILoansService;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -19,7 +18,6 @@ import java.util.Random;
 @AllArgsConstructor
 public class ILoansServiceImpl implements ILoansService {
 
-    @Autowired
     private LoansRepository loansRepository;
 
     @Override

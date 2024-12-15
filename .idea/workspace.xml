@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="daa62374-90ac-4498-b149-be0dc23c0572" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Cards/src/main/java/com/tomcat/Cards/dto/ContactInfoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/accounts-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/target/accounts-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/surefire-reports/2024-12-15T15-44-13_486.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/surefire-reports/TEST-com.tomcatdevs.Accounts.AccountsApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/target/surefire-reports/TEST-com.tomcatdevs.Accounts.AccountsApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/surefire-reports/com.tomcatdevs.Accounts.AccountsApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/target/surefire-reports/com.tomcatdevs.Accounts.AccountsApplicationTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cards/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/Dockerfile" afterDir="false" />
+    <list default="true" id="3d2ef02f-42ed-44bf-b04c-c8a1da101e66" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Cards/Dockerfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cards/src/main/java/com/tomcat/Cards/controller/CardsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/src/main/java/com/tomcat/Cards/controller/CardsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loans/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans/Dockerfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loans/src/main/java/com/tomcat/Loans/service/Impl/ILoansServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/src/main/java/com/tomcat/Loans/service/Impl/ILoansServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,29 +18,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="Record" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Cards" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;prateekarya100&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/prateekarya100/EazyBank.git&quot;,
-    &quot;accountId&quot;: &quot;bd7ebfe8-cea7-418a-8382-04005d43c33f&quot;
-  }
-}</component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
+  &quot;associatedIndex&quot;: 1
 }</component>
-  <component name="ProjectId" id="2qAhOnaprUOXEumOYy76ZrrsauI" />
+  <component name="ProjectId" id="2q70wDzNyzjsZlz6ImWU2eWOBqy" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -61,84 +40,34 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.AccountsApplication.executor": "Run",
-    "Application.CardsApplication.executor": "Run",
-    "Application.LoansApplication.executor": "Run",
-    "JUnit.All in cards.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "tomcat",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/github_repo_clone/bankapp/bankapp/Accounts"
+    "last_opened_file_path": "D:/microservices/section6",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="Application" />
-      </set>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.AccountsApplication">
-    <configuration name="AccountsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tomcatdevs.Accounts.AccountsApplication" />
-      <module name="Accounts" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tomcatdevs.Accounts.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CardsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tomcat.Cards.CardsApplication" />
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
       <module name="cards" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tomcat.Cards.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoansApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tomcat.Loans.LoansApplication" />
-      <module name="loans" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tomcat.Loans.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="cards" />
+      <option name="filePath" />
+      <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Application.AccountsApplication" />
-      <item itemvalue="Application.LoansApplication" />
-      <item itemvalue="Application.CardsApplication" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.LoansApplication" />
-        <item itemvalue="Application.CardsApplication" />
-        <item itemvalue="Application.AccountsApplication" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="daa62374-90ac-4498-b149-be0dc23c0572" name="Changes" comment="" />
-      <created>1734111257914</created>
+      <changelist id="3d2ef02f-42ed-44bf-b04c-c8a1da101e66" name="Changes" comment="" />
+      <created>1733998542949</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1734111257914</updated>
+      <updated>1733998542949</updated>
     </task>
     <servers />
   </component>

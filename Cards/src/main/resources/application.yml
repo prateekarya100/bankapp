@@ -1,5 +1,5 @@
-server:
-  port: 9000
+#server:
+#  port: 9000
 
 spring:
   datasource:
@@ -19,12 +19,3 @@ spring:
     show-sql: true
     database: mysql
     generate-ddl: true
-
-cards:
-  message: "thank you to contacting eazybank cards microservices development team"
-  contactDetails:
-    mobile: "9650841442"
-    email: "prateekarya100@gmail.com"
-  onCallSupport:
-    - 9650841442
-    - 9389998268

@@ -1,4 +1,4 @@
-# Created at 2024-12-15T16:03:19.627
+# Created at 2024-12-15T17:08:15.128
 Boot Manifest-JAR contains absolute paths in classpath 'D:\github_repo_clone\bankapp\bankapp\Accounts\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
 'other' has different root
