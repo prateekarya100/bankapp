@@ -7,21 +7,12 @@
     <list default="true" id="daa62374-90ac-4498-b149-be0dc23c0572" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/Cards/src/main/java/com/tomcat/Cards/dto/ContactInfoDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/dto/AccountsDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/dto/AccountsDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/dto/CustomerDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/dto/CustomerDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/dto/ErrorResponseDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/dto/ErrorResponseDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/dto/ResponseDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/dto/ResponseDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/exception/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/exception/GlobalExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/model/Accounts.class" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/model/Accounts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/model/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/service/Impl/AccountsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/target/classes/com/tomcatdevs/Accounts/service/Impl/AccountsService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cards/Dockerfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cards/src/main/java/com/tomcat/Cards/controller/CardsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/src/main/java/com/tomcat/Cards/controller/CardsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Loans/Dockerfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
