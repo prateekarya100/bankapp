@@ -12,5 +12,5 @@ Technologies Used
 -----------------
 - Frontend: HTML, CSS, JavaScript, Bootstrap
 - Backend: Spring Boot, Java
-- Database: PostgreSQL
+- Database: MySQL
 - Security: JWT for authentication, HTTPS for secure communication
